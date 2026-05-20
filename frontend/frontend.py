@@ -167,9 +167,6 @@ while True:
             subprocess.run(["nmcli", "dev", "wifi", "connect", "Recurse Center"])
             print("nmcli connect done")
             time.sleep(1)
-            
-            print("attempting to restart service...")
-            subprocess.run(["systemctl", "restart", "fortune-bot.service"])
 
             try:
                 result = subprocess.run(
@@ -190,44 +187,8 @@ while True:
                 print(f"error: {e}")
             print("git done")
             time.sleep(1)
+
+            subprocess.run(["systemctl", "restart", "fortune-bot.service"])
+            print("service restarted")
+
             toggle = not toggle
-# while True:
-#     # Draw a black filled box to clear the image.
-#     draw.rectangle((0, 0, width, height), outline=0, fill=0)
-
-#     # Shell scripts for system monitoring from here:
-#     # https://unix.stackexchange.com/questions/119126/command-to-display-memory-usage-disk-usage-and-cpu-load
-#     cmd = "iwgetid -r"
-#     ssid = subprocess.check_output(cmd, shell=True).decode("utf-8").strip()
-#     net_status = ""
-#     if ssid == "Line-us-Setup":
-#         net_status = "hold for fortune -->"
-#     else:
-#         net_status = "net: " + ssid
-#     cmd = "top -bn1 | grep load | awk '{printf \"dreaming: %d%%\", $(NF-2)*100}'"
-
-#     CPU = subprocess.check_output(cmd, shell=True).decode("utf-8")
-
-#     # Write stats.
-#     y = top + 12
-#     draw.text((x, y), net_status, font=font, fill="#FFFFFF")
-#     y += font.getbbox(net_status)[3] - font.getbbox(net_status)[1] + 5
-#     draw.text((x, y), CPU, font=font, fill="#FFFF00")
-#     y += font.getbbox(CPU)[3] - font.getbbox(CPU)[1] + 5
-
-#     if buttonB.value and not buttonT.value:  # just top btn pressed
-#         response = requests.post('http://localhost:3000/tell', json = chimes)
-#         status = response.json()
-#         if status['message'] == "busy":
-#             draw.text((x, y), "busy, please wait :)", font=font, fill="#FFFF00")
-#         else:
-#             draw.text((x, y), "divining...", font=font, fill="#FFFF00")
-#     if buttonT.value and not buttonB.value:  # just bot btn pressed
-#         draw.rectangle([0, 0, width, height], fill="white")
-#         print("pressed bottom btn")
-
-#     # Display image.
-#     disp.image(image, rotation)
-
-#     # Set refresh interval (display + logic).
-#     time.sleep(0.05)

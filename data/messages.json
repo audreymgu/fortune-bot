@@ -1,6 +1,152 @@
 [
   {
+    "message": "trust in yourself",
+    "symbol" : "smiley"
+  },
+  {
+    "message": "future is yours to write",
+    "symbol" : "letter"
+  },
+  { 
+    "message" : "stay away from wasps",
+    "symbol" : "beedrill"
+  },
+  { 
+    "message" : "smile often"
+  },
+  { 
+    "message" : "kindness is never wasted"
+  },
+  { 
+    "message" : "no angry way to say bubbles"
+  },
+  { 
+    "message" : "you drank enough water today"
+  },
+  { 
+    "message" : "you will be alright heres a flower",
+    "symbol" : "flower"
+  },
+  { 
+    "message" : "monads will solve your problems"
+  },
+  { 
+    "message" : "clean ur dishwasher filter"
+  },
+  { 
+    "message" : "amid pressure look for joy"
+  },
+  { 
+    "message" : "its all good",
+    "symbol" : "thumbsup"
+  },
+  {
+    "message" : "tomorrow is gonna rule",
+    "symbol" : "sun"
+  },
+  {
+    "message" : "you are blessed",
+    "symbol" : "sun"
+  },
+  {
+    "message" : "all will pass"
+  },
+  {
+    "message" : "you drank enough water today",
+    "symbol" : "water"
+  },
+  {
     "message" : "wisdom comes from curious places",
     "symbol" : "flower"
+  },
+  {
+    "message" : "to find it let go"
+  },
+  {
+    "message" : "peace is within"
+  },
+  {
+    "message" : "go for it"
+  },
+  {
+    "message" : "do it today"
+  },
+  {
+    "message" : "you have what you need"
+  },
+  {
+    "message" : "don t ignore your heart"
+  },
+  {
+    "message" : "you don t need permission"
+  },
+  {
+    "message" : "a new chapter begins in march"
+  },
+  {
+    "message" : "your bake sale will succeed"
+  },
+  {
+    "message" : "a new hobby is in your future"
+  },
+  {
+    "message" : "try a new sport"
+  },
+  {
+    "message" : "focus will find you"
+  },
+  {
+    "message" : "embrace the unexpected"
+  },
+  {
+    "message" : "strangers will become friends"
+  },
+  {
+    "message" : "caution will serve you"
+  },
+  {
+    "message" : "it will be worth it"
+  },
+  {
+    "message" : "your humor will help someone"
+  },
+  {
+    "message" : "take a chance"
+  },
+  {
+    "message" : "stay calm"
+  },
+  {
+    "message" : "our deeds define us"
+  },
+  {
+    "message" : "listen to the wind"
+  },
+  {
+    "message" : "listen to the trees"
+  },
+  {
+    "message" : "its ok to be messy"
+  },
+  {
+    "message" : "you know what to do"
+  },
+  {
+    "message" : "love is not approval"
+  },
+  {
+    "message" : "care for what you are ignoring"
+  },
+  {
+    "message" : "don t fear what is unknown"
+  },
+  {
+    "message" : "start before you are ready"
+  },
+  {
+    "message" : "uncertainty and luck are sisters"
+  },
+  {
+    "message" : "trust in your path"
   }
 ]
