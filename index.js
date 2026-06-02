@@ -51,7 +51,7 @@ app.post(["/tell"], (req, res) => {
     // } else {
     //   symbol = symbols[Math.floor(Math.random() * symbols.length)];
     // }
-    symbol = symbols.find((data) => data.name == "crab");
+    symbol = symbols.find((data) => data.name == "bufo");
 
     res.status(200).json({
       message: message.message,
