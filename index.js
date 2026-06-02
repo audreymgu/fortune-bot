@@ -46,11 +46,12 @@ app.post(["/tell"], (req, res) => {
   if (lm.commandBuffer.length == 0) {
     const message = messages[Math.floor(Math.random() * messages.length)];
     let symbol;
-    if (message.symbol) {
-      symbol = symbols.find((data) => data.name == message.symbol);
-    } else {
-      symbol = symbols[Math.floor(Math.random() * symbols.length)];
-    }
+    // if (message.symbol) {
+    //   symbol = symbols.find((data) => data.name == message.symbol);
+    // } else {
+    //   symbol = symbols[Math.floor(Math.random() * symbols.length)];
+    // }
+    symbol = symbols.find((data) => data.name == "crab";
 
     res.status(200).json({
       message: message.message,
