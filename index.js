@@ -44,22 +44,24 @@ app.post(["/shape"], (req, res) => {
 
 app.post(["/tell"], (req, res) => {
   if (lm.commandBuffer.length == 0) {
-    const message = messages[Math.floor(Math.random() * messages.length)];
-    let symbol;
-    if (message.symbol) {
-      symbol = symbols.find((data) => data.name == message.symbol);
-    } else {
-      symbol = symbols[Math.floor(Math.random() * symbols.length)];
-    }
+    // const message = messages[Math.floor(Math.random() * messages.length)];
+    // let symbol;
+    // if (message.symbol) {
+    //   symbol = symbols.find((data) => data.name == message.symbol);
+    // } else {
+    //   symbol = symbols[Math.floor(Math.random() * symbols.length)];
+    // }
 
-    res.status(200).json({
-      message: message.message,
-      symbol: symbol.name,
-    });
+    // res.status(200).json({
+    //   message: message.message,
+    //   symbol: symbol.name,
+    // });
 
-    const printOut = printString(message.message);
-    const printSym = printSymbol(symbol.name);
-    console.log(Array.isArray(printSym));
+    // const printOut = printString(message.message);
+    // const printSym = printSymbol(symbol.name);
+    // console.log(Array.isArray(printSym));
+    const printOut = printString("your future is self directed");
+    const printSym = printSymbol(computer);
     printOut.push(...printSym);
     printOut.push(...req.body.commands);
     console.log(printOut);
