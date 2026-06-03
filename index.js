@@ -57,11 +57,13 @@ app.post(["/tell"], (req, res) => {
     //   symbol: symbol.name,
     // });
 
+    res.status(200);
+
     // const printOut = printString(message.message);
     // const printSym = printSymbol(symbol.name);
     // console.log(Array.isArray(printSym));
     const printOut = printString("your future is self directed");
-    const printSym = printSymbol(computer);
+    const printSym = printSymbol("computer");
     printOut.push(...printSym);
     printOut.push(...req.body.commands);
     console.log(printOut);
